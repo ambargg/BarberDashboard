@@ -1,1 +1,56 @@
 // Specific CSS for your home-page
+.content {
+    min-height: 250px;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ .nav-timetable {
+    background-color: white;
+    z-index: 1;
+    overflow: visible;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 50px;
+    color: #2C343F;
+    font-size: 21px;
+    padding: 15px 15px;
+    display: block;
+    margin: -15px -15px 0;
+    border-bottom: 1px solid #CED8DB;
+ }
+
+ .mobile-view {
+    display: inline-block;
+    color: #2C343F;
+    font-size: 16px;
+}
+
+.actions-right {
+    overflow: visible;
+    float: right;
+}
+
+.date-controls {
+    margin-right: 15px;
+    display: inline-block;
+    .fas {
+        color:  #2C343F;
+    }
+    .btn {
+        padding: 3px;
+        width: 28px;
+     }
+}
+
+.heading-summary {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    h2 {
+        font-size: 21px;
+        font-weight: 700;
+    }
+}

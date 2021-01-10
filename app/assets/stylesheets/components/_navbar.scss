@@ -1,3 +1,36 @@
+.navbar {
+  position: relative;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  background-color: #17202d;
+}
+
+.navbar-static-top {
+  z-index: 1000;
+  border-width: 0 0 1px;
+}
+
+.navbar {
+  background-color: #17202d;
+}
+
+.nav-user {
+  float: right;
+}
+
+.fas {
+   color: white;
+}
+
+@media (max-width: 767px) {
+.navbar {
+  margin: 0;
+  width: 100%;
+  float: none;
+  }
+}
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
