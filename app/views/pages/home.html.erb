@@ -1,14 +1,15 @@
-<nav class="navbar navbar-static-top">
-  <a class="sidebar-toggle" data-toggle="offcanvas" href="#" role="button">
-    <i class="fas fa-bars"></i>
-  </a>
-  <div class="nav-user">
-      <i class="fas fa-user"></i>
-    </div>
+<nav class="navbar-static-top">
+  <div class="navbar">
+    <a class="sidebar-toggle" data-toggle="offcanvas" href="#" role="button">
+      <i class="fas fa-bars"></i>
+    </a>
+    <div class="nav-user">
+        <i class="fas fa-user"></i>
+      </div>
+  </div>
 </nav>
 
 <div class="content-wrapper">
-  <section class="content">
     <div class="nav-timetable">
       <span class="mobile-view"> Fri 22nd Jan </span>
       <div class="actions-right">
@@ -28,10 +29,42 @@
       </div>
     </div>
 
+  <section class="content">
     <div class="dashboard-content">
       <div class="heading-summary">
          <h2>Pages#home</h2>
           <p>Find me in app/views/pages/home.html.erb</p>
+      </div>
+
+      <div class="revenue-container">
+        <div class="row my-3">
+            <div class="col">
+                <h4>Bootstrap 4 Chart.js</h4>
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-4 py-1">
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="chDonut1"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-1">
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="chDonut2"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-1">
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="chDonut3"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
     
     </div>

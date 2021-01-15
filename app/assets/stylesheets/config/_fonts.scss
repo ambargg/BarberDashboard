@@ -3,8 +3,8 @@
 @font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:400;font-display:block;src:url(/assets/fa-brands-400-84fe1cf1c0227c62cf0e43236c4d2643aeecc294f66bdd2c724fb74ebe34e7bc.eot);src:url(/assets/fa-brands-400-84fe1cf1c0227c62cf0e43236c4d2643aeecc294f66bdd2c724fb74ebe34e7bc.eot?#iefix) format("embedded-opentype"),url(/assets/fa-brands-400-80c7d8d88a91688aa18a1ce39ec33e15ac5e1cad7c7be1c5fa3c403f34f1b53c.woff2) format("woff2"),url(/assets/fa-brands-400-638b8403bb417806d93b45d266d61d66a4dcea0708c55070ea23fc42cabad9fe.woff) format("woff"),url(/assets/fa-brands-400-dfe95ecb90f75932417eb238c037a3657b0a17a5a96a78fa8ea2a0676e73d47f.ttf) format("truetype"),url(/assets/fa-brands-400-fc34a6db461ba2e7eaf58aaa7d9679ee6fc8c791835217f1e5982528d0a2038e.svg#fontawesome) format("svg")}.fab{font-family:'Font Awesome 5 Brands';font-weight:400}
 
 // Define fonts for body and headers
-$body-font: "Raleway", "Helvetica", "sans-serif";
-$headers-font: "Roboto", "Helvetica", "sans-serif";
+$body-font: "Roboto", "Helvetica", "sans-serif";
+$headers-font: "Raleway", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {

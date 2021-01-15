@@ -9,10 +9,9 @@
 .navbar-static-top {
   z-index: 1000;
   border-width: 0 0 1px;
-}
-
-.navbar {
-  background-color: #17202d;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .nav-user {
@@ -21,6 +20,22 @@
 
 .fas {
    color: white;
+}
+
+.nav-timetable {
+  background-color: white;
+  z-index: 1;
+  overflow: visible;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 50px;
+  height: 74px;
+  color: #2C343F;
+  font-size: 21px;
+  padding: 15px 15px;
+  display: block;
+  margin: -15px -15px 0;
+  border-bottom: 1px solid #CED8DB;
 }
 
 @media (max-width: 767px) {
