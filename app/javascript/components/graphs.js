@@ -1,15 +1,17 @@
+import Chart from 'chart.js';
+
 const initPieChart = () => {
-    var colors = ['#F7CC50','#79D9CD','#333333','#c3e6cb','#dc3545','#6c757d'];
-  
-    /* 3 donut charts */
+    var colors = ['#F7CC50','#78D8CD','#262E37','#B8C7CE','#FFFFFF'];
+    Chart.defaults.global.defaultFontColor = 'white';
+    /* donut charts */
     var donutOptions = {
       cutoutPercentage: 55, 
-      legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
+      legend: {position:'left', align: 'end', padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
     };
   
-    // donut 1
+    // donut 
     var chDonutData1 = {
-        labels: ['Earnings today', 'Tips today'],
+        labels: ['Earnings', 'Tips', 'Remaining'],
         datasets: [
           {
             backgroundColor: colors.slice(0,3),
@@ -24,46 +26,6 @@ const initPieChart = () => {
       new Chart(chDonut1, {
           type: 'pie',
           data: chDonutData1,
-          options: donutOptions
-      });
-    }
-  
-    // donut 2
-    var chDonutData2 = {
-        labels: ['Wips', 'Pops', 'Dags'],
-        datasets: [
-          {
-            backgroundColor: colors.slice(0,3),
-            borderWidth: 0,
-            data: [40, 45, 30]
-          }
-        ]
-    };
-    var chDonut2 = document.getElementById("chDonut2");
-    if (chDonut2) {
-      new Chart(chDonut2, {
-          type: 'pie',
-          data: chDonutData2,
-          options: donutOptions
-      });
-    }
-  
-    // donut 3
-    var chDonutData3 = {
-        labels: ['Angular', 'React', 'Other'],
-        datasets: [
-          {
-            backgroundColor: colors.slice(0,3),
-            borderWidth: 0,
-            data: [21, 45, 55, 33]
-          }
-        ]
-    };
-    var chDonut3 = document.getElementById("chDonut3");
-    if (chDonut3) {
-      new Chart(chDonut3, {
-          type: 'pie',
-          data: chDonutData3,
           options: donutOptions
       });
     }
