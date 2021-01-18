@@ -1,0 +1,58 @@
+.collapsable {
+    border: 1px solid #222D32;
+    border-radius: 3px;
+    margin-bottom: 15px;
+
+    &.show {
+        .collapsable-content {
+            display: block;
+        }
+        .collapsable-header {
+            background-color: #262E37;
+            border-bottom: 1px solid #222D32;
+            h4 {
+                color: white;
+            }
+            .fas {
+                color: white;
+            }
+            
+        }
+    }
+
+    .collapsable-content {
+        display: none;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        display: contents;
+    }
+}
+
+.collapsable-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    color: #2C343F;
+    justify-content: space-between;
+    // width: 100%;
+    // overflow-anchor: none;
+    h4 {
+        margin: 0;
+    }
+    .fas {
+        color:  #2C343F;
+    }
+    .header {
+        display: inline-flex;
+        align-items: center;
+        .fas.fa-calendar-check {
+            padding-right: 5px;
+            font-size: 20px;
+        }
+    }
+}

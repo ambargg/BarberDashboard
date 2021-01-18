@@ -29,12 +29,14 @@ window.$ = window.JQuery = JQuery;
 
 // Internal imports
 import { initPieChart } from '../components/graphs';
+import { initCollapsables } from "../components/collapsables";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   initPieChart();
-});
+  initCollapsables();
 
-console.log("hello");
+  console.log('hello')
+});
 
 
