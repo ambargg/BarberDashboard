@@ -37,11 +37,11 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding: 1rem 1.25rem;
+    padding: 0px 1.25rem 0px 0px;
+    // padding: 1rem 1.25rem;
     color: #2C343F;
-    justify-content: space-between;
-    // width: 100%;
-    // overflow-anchor: none;
+    // justify-content: space-between;
+
     h4 {
         margin: 0;
     }
@@ -51,9 +51,36 @@
     .header {
         display: inline-flex;
         align-items: center;
+        margin-left: 10px;
         .fas.fa-calendar-check {
             padding-right: 5px;
             font-size: 20px;
         }
+    }
+    .icon {
+        position: absolute;
+        left: 90%;
+    }
+}
+
+.info-box-icon {
+    margin: 0;
+    padding: 19px;
+    // border-top-left-radius: 3px;
+    // border-top-right-radius: 0px;
+    // border-bottom-right-radius: 0;
+    // border-bottom-left-radius: 3px;
+    float: left;
+    height: 100%;
+    width: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #262E37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .fas {
+        color:  white;
     }
 }
