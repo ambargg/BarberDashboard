@@ -8,20 +8,88 @@
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 5px;
     background-color: #161D27 !important;
+    .card-body {
+        padding: 0px 1.25rem 0rem 1.25rem;
+        position: relative;
+        top: -10px;
+    }
 }
 
-i.fas.fa-rocket {
-    
+i.fas.fa-rocket { 
     padding-right: 6px;
     font-size: 16px;
 }
 
+.revenue-container {
+    .col-xs-12 {
+        padding-left: 19px;
+        padding-right: 18px;
+    }
+
+    .percentage-message-container {
+        h2 {
+            margin: 0;
+            color: white;
+            font-size: 20px;
+        }
+        p {
+            margin: 0;
+            color: #B8C7CE;
+        }
+    }
+}
+
+.revenue-progress {
+    border-radius: 20px;
+    margin-bottom: 10px;
+    height: 14px;
+    overflow: hidden;
+    background-color: #262E37;
+    border: 1px solid #B8C7CE;
+    .progress-earnings {
+        background: #F7CC50;
+    }
+    .progress-tips {
+        background: #78D8CD;
+    }
+}
+
 .col {
-    color: white;
     display: flex;
-    align-items: baseline;
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    padding-left: 30px;
+    .header-info {
+        color: white;
+        display: flex;
+        align-items: baseline;
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        padding-left: 18px;
+    }
+    .btn-group {
+        padding-right: 18px;
+        height: 30px;
+    }
+    .btn {
+        border-color: #B8C7CE;
+        border-radius: 3px;
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        &:hover {
+            color: #2C343F;
+            background-color: white;
+        }
+    }
+    .active {
+        color: #2C343F;
+        background-color: white;
+    }
+    .inactive {
+        background-color: #262E37; 
+        color: white;
+        
+    }
 }

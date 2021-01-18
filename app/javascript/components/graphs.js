@@ -16,7 +16,7 @@ const initPieChart = () => {
           {
             backgroundColor: colors.slice(0,3),
             borderWidth: 0,
-            data: [74, 11, 40]
+            data: [65, 10, 30]
           }
         ]
     };
