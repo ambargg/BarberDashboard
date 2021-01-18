@@ -21,13 +21,6 @@
     float: right;
 }
 
-hr {
-    border: 1px solid white;
-    margin-top: 0;
-    margin-bottom: 15px;
-    width: 90%;
-}
-
 .date-controls {
     margin-right: 15px;
     display: inline-block;
@@ -43,8 +36,31 @@ hr {
 .heading-summary {
     margin-top: 10px;
     margin-bottom: 3px;
+
     h2 {
         font-size: 21px;
         font-weight: 700;
     }
+    .btn-primary {
+        float: right;
+    }
+    .active {
+        color: white;
+        background-color: #2C343F;
+        z-index: 0 !important;
+    }
+}
+
+.schedule-hours {
+    display: flex;
+    flex-flow: wrap;
+    padding-bottom: 3px;
+    p {
+        margin: 0px 0px 10px 0px;
+    }
+}
+
+.border-text-top {
+    border-top: 1px solid #2C343F;
+    padding-top: 10px;
 }

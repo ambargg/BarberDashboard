@@ -1,11 +1,57 @@
 .btn {
-    border-color: #B8C7CE;
-    background-color: #B8C7CE;
-    border-radius: 2px;
+    border-color: #2C343F;
+    background-color: white;
+    border-radius: 3px;
     display: inline-block;
     margin-bottom: 0;
     font-weight: normal;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
+    &:hover {
+        color: white;
+        background-color: #2C343F;
+    }
  }
+
+ .btn-primary {
+    border-radius: 3px;
+    color: white;
+    background-color: #128afa;
+    border: 1px solid #128afa;
+    i { 
+        padding-right: 6px;
+        font-size: 14px;
+    }
+    &:hover {
+        border: 1px solid #128afa;
+        color: #128afa;
+        background-color: white;
+        i { 
+            color: #128afa;
+        }
+    }
+}
+
+.schedule-hours {
+    .btn-pill {
+        border-radius: 28px;
+        margin: 0px 9px 8px 0px;
+        padding: 2px 16px;
+    }
+    .disabled {
+        border: 1px solid #B8C7CE;
+        background-color: #B8C7CE;
+        color: #718083;
+    }
+    .time-active {
+            cursor: pointer;
+            border: 1px solid #2C343F;
+            color: #2C343F;
+           
+            &:hover {
+                background-color: #2C343F;
+                color: white;
+            }
+    }
+}
