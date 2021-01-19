@@ -38,7 +38,7 @@
           <button type="button" class="btn">Week</button>
         </div>
 
-        <button type="button" class="btn btn-primary"><i class="fas fa-calendar-check"></i>Next</button>
+        <button type="button" id="showNextAppointment" class="btn btn-primary"><i class="fas fa-calendar-check"></i>Next</button>
       </div>
      
 
@@ -69,7 +69,7 @@
                 <div class="timetable-hour ongoing">
                   <div class="timetable-content">
                     <div class="schedule-infos">
-                      <i class="far fa-clock"></i><p><strong>09:00-12:00</strong> | Jenny Bose | Haircut & Dye </p>
+                      <i class="far fa-clock"></i><p><strong>12:00-13:00</strong> | Jenny Bose | Haircut & Dye </p>
                     </div>
                     <div class="button-infos">
                       <span class="btn-pill unpaid"><i class="fas fa-walking"></i>Unpaid</span>
@@ -81,14 +81,14 @@
                  
                   <div class="free-time">
                     <div class="schedule-infos">
-                      <p><strong>09:00-12:00</strong> | Free Time </p>
+                      <p><strong>13:00-14:00</strong> | Free Time </p>
                     </div>
                   </div>
 
-                <div class="timetable-hour">
+                <div class="timetable-hour" id="fakeNextAppointment">
                   <div class="timetable-content">
                     <div class="schedule-infos">
-                      <i class="far fa-clock"></i><p><strong>09:00-12:00</strong> | Jenny Bose | Haircut & Dye </p>
+                      <i class="far fa-clock"></i><p><strong>14:00-15:00</strong> | Jenny Bose | Haircut & Dye </p>
                     </div>
                     <div class="button-infos">
                       <span class="btn-pill unpaid"><i class="fas fa-walking"></i>Unpaid</span>
@@ -101,7 +101,7 @@
                 <div class="timetable-hour">
                   <div class="timetable-content">
                     <div class="schedule-infos">
-                      <i class="far fa-clock"></i><p><strong>09:00-12:00</strong> | Jenny Bose | Haircut & Dye </p>
+                      <i class="far fa-clock"></i><p><strong>15:00-16:00</strong> | Jenny Bose | Haircut & Dye </p>
                     </div>
                     <div class="button-infos">
                       <span class="btn-pill paid-online"><i class="fas fa-coins"></i>Online</span>
@@ -113,14 +113,14 @@
 
                  <div class="free-time">
                     <div class="schedule-infos">
-                      <p><strong>09:00-12:00</strong> | Free Time </p>
+                      <p><strong>16:00-16:15</strong> | Free Time </p>
                     </div>
                   </div>
 
                 <div class="timetable-hour">
                   <div class="timetable-content">
                     <div class="schedule-infos">
-                      <i class="far fa-clock"></i><p><strong>09:00-12:00</strong> | Jenny Bose | Haircut & Dye </p>
+                      <i class="far fa-clock"></i><p><strong>16:15-18:00</strong> | Jenny Bose | Haircut & Dye </p>
                     </div>
                     <div class="button-infos">
                       <span class="btn-pill paid-online"><i class="fas fa-coins"></i>Online</span>
@@ -164,7 +164,7 @@
 
       <div class="revenue-container">
         <div class="row pb-2">
-          <div class="col-md-4 py-1">
+          <div class="col-sm-12 col-md-8 col-lg-6 py-1">
               <div class="graph-card">
                   <div class="row mt-2 mb-1">
                       <div class="col">
@@ -181,14 +181,14 @@
                   </div>
                   <hr>
 
-                  <div class="col-xs-12">
+                  <div class="col-12">
                     <div class="revenue-progress progress">
                       <div class="progress-bar progress-earnings" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                       <div class="progress-bar progress-tips" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
 
-                  <div class="percentage-message-container col-xs-6 col-md-2">
+                  <div class="percentage-message-container col-sm-12 col-md-6 col-lg-4">
                     <div class="percentage-message-box-intro ">
                       <h2>£540</h2>
                       <p>Expected Total Today</p>

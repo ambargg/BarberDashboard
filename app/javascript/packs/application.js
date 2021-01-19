@@ -37,6 +37,12 @@ document.addEventListener('turbolinks:load', () => {
   initCollapsables();
 
   console.log('hello')
+
+  const nextAppointmentButton = document.getElementById('showNextAppointment')
+  nextAppointmentButton.addEventListener('click', () => {
+    const nextAppointment = document.getElementById('fakeNextAppointment')
+    nextAppointment.classList.add('next-appointment')
+  });
 });
 
 
