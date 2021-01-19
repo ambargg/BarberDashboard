@@ -1,0 +1,75 @@
+    .busy-block {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background: #161D27;
+      transition: .2s ease box-shadow, .2s ease transform;
+      &:hover{
+        box-shadow: 0 20px 30px 0 transparentize(#B8C7CE, 0.7);
+        transform: scale(1.05);
+      }
+    }
+
+*{
+  box-sizing: border-box;
+}
+
+.timetable{
+  overflow: scroll;
+  display: grid;
+  grid-template-areas: ". week"
+                       "time content";
+  grid-template-columns: 100px;
+  grid-template-rows: 60px;
+  height: 100%;
+  .weekend {
+    background: lighten(#ECEFF1, 5%);
+    color: lighten(#546E7A, 20%);
+  }
+  .week-names{
+    grid-area: week;
+    display: grid;
+    // 7 days a week
+    grid-template-columns: repeat(7, 1fr);
+    text-transform: uppercase;
+    font-size: 12px;
+    & > div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 1px 0 0 #ECEFF1;
+    }
+  }
+  .time-interval{
+    grid-area: time;
+    display: grid;
+    // 6 time intervals
+    grid-template-rows: repeat(6, 1fr); 
+    font-size: 14px;
+    & > div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 0 1px 0 0 #ECEFF1;
+    }
+  }
+  .weekly-content {
+    min-width: 400px;
+    min-height: 250px;
+    grid-area: content;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr); 
+    grid-template-columns: repeat(7, 1fr);
+    & > div{
+       box-shadow: inset 1px 0 0 #ECEFF1, inset 0 1px 0 0 #ECEFF1;
+    }
+  }
+}
+
+.no-padding {
+    padding: 0 !important;
+}

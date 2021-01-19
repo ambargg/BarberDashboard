@@ -14,7 +14,7 @@ $body-color: $gray;
 $primary:    $blue;
 $success:    $green;
 $info:       $yellow;
-$danger:     $red;
+$accent-base:     $red;
 $warning:    $orange;
 
 // Buttons & inputs' radius
@@ -23,3 +23,14 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
+$accent-base: #8eeec0;
+$cutty-sark: #546E7A;
+$porcelain: #ECEFF1;
+$accents: (
+  pink: adjust-hue($accent-base, -180%),
+  orange: adjust-hue($accent-base, -120%),
+  green: adjust-hue($accent-base, -60%),
+  cyan: $accent-base,
+  blue: adjust-hue($accent-base, 60%),
+  purple: adjust-hue($accent-base, 120%),
+);
