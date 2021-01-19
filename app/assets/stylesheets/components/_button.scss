@@ -12,6 +12,10 @@
         color: white;
         background-color: #2C343F;
     }
+    z-index: 0 !important;
+    .active {
+        z-index: 0 !important;
+      }
  }
 
  .btn-primary {
@@ -32,10 +36,6 @@
         }
     }
 }
-
-.btn.active {
-    z-index: 0 !important;
-  }
 
 .cancel {
     float: right;
