@@ -83,7 +83,7 @@ The **javascript** is in 3 different files (*appointments, collapsables, graphs*
 
 ### Working App Screenshots:
 
-**Main dashboard with collapsabes closed:**
+**Main dashboard with collapsables closed:**
 
 ![dashboard1](https://user-images.githubusercontent.com/52960001/105102959-06d07200-5ab0-11eb-9f4d-b1cf6f5ea466.png)
 ![dashboard2](https://user-images.githubusercontent.com/52960001/105103018-1cde3280-5ab0-11eb-87b0-33bff4985b73.png)
@@ -103,8 +103,6 @@ The **javascript** is in 3 different files (*appointments, collapsables, graphs*
 
 
 ![today2](https://user-images.githubusercontent.com/52960001/105103166-69297280-5ab0-11eb-9f52-5723c9e9d281.png)
-
-
 ![today3](https://user-images.githubusercontent.com/52960001/105103187-78102500-5ab0-11eb-80a2-e80073975cc0.png)
 
 
@@ -113,7 +111,6 @@ The **javascript** is in 3 different files (*appointments, collapsables, graphs*
 
 
 ![revenue 1](https://user-images.githubusercontent.com/52960001/105103282-9e35c500-5ab0-11eb-93f6-ee86a6f2fa16.png)
-
 ![revenue 2](https://user-images.githubusercontent.com/52960001/105103292-a1c94c00-5ab0-11eb-9626-79ed530467b6.png)
 
 
