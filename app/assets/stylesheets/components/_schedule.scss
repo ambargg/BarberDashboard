@@ -1,0 +1,80 @@
+.schedule-hours {
+    display: flex;
+    flex-flow: wrap;
+    padding-bottom: 3px;
+    p {
+        margin: 0px 0px 10px 0px;
+    }
+}
+
+.schedule-timetable {
+    width: 100%;
+    .timetable-hour{
+        border: 1px solid #222D32;
+        border-radius: 3px;
+        margin-bottom: 6px;
+    }
+
+    .ongoing {
+        background: #161D27;
+        color: white;
+    }
+}
+
+.timetable-content {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 10px 0px 9px 10px;
+    /* justify-content: center; */
+    /* min-height: 80px; */
+    p {
+        margin-bottom: 6px;
+    }
+    .schedule-infos {
+        display: flex;
+        align-items: baseline;
+        .far {
+            margin-right: 5px;
+        }
+    }
+}
+
+.free-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background: #D8E8F1;
+    border-radius: 3px;
+    margin-bottom: 6px;
+    .schedule-infos {
+        color: #718083;
+        p {
+            margin-bottom: 9px;
+        }
+    }
+}
+
+
+.button-infos {
+    .unpaid {
+        border: 1px solid #FF9C06;
+        background-color: #FF9C06;
+        color: white;
+    }
+    .paid-online {
+        border: 1px solid #00B800;
+        background-color: #00B800;
+        color: white;
+    }
+    .disabled {
+        border: 1px solid #B8C7CE;
+        background-color: #B8C7CE;
+        color: #718083;
+    }
+    .fas {
+        margin-right: 6px;
+        margin-left: -2px;
+    }
+}

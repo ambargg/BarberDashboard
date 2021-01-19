@@ -35,7 +35,7 @@
 
 .heading-summary {
     margin-top: 10px;
-    margin-bottom: 3px;
+    margin-bottom: 12px;
 
     h2 {
         font-size: 21px;
@@ -48,15 +48,6 @@
         color: white;
         background-color: #2C343F;
         z-index: 0 !important;
-    }
-}
-
-.schedule-hours {
-    display: flex;
-    flex-flow: wrap;
-    padding-bottom: 3px;
-    p {
-        margin: 0px 0px 10px 0px;
     }
 }
 

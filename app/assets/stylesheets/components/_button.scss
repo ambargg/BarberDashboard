@@ -33,25 +33,36 @@
     }
 }
 
-.schedule-hours {
-    .btn-pill {
-        border-radius: 28px;
-        margin: 0px 9px 8px 0px;
-        padding: 2px 16px;
+.btn-cancellation {
+    position: relative;
+    left: 52%;
+    border-radius: 3px;
+    border: 1px solid #2C343F;
+    padding: 3px 5px 3px 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: #2C343F;
+        color: white;
     }
-    .disabled {
-        border: 1px solid #B8C7CE;
-        background-color: #B8C7CE;
-        color: #718083;
-    }
-    .time-active {
-            cursor: pointer;
-            border: 1px solid #2C343F;
-            color: #2C343F;
-           
-            &:hover {
-                background-color: #2C343F;
-                color: white;
-            }
-    }
+}
+
+.btn-pill {
+    border-radius: 28px;
+    margin: 0px 9px 8px 0px;
+    padding: 3px 15px;
+}
+.disabled {
+    border: 1px solid #B8C7CE;
+    background-color: #B8C7CE;
+    color: #718083;
+}
+.time-active {
+        cursor: pointer;
+        border: 1px solid #2C343F;
+        color: #2C343F;
+        
+        &:hover {
+            background-color: #2C343F;
+            color: white;
+        }
 }

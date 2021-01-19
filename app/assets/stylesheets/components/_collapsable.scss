@@ -7,6 +7,9 @@
         .collapsable-content {
             display: block;
             padding: 1rem 1rem 0px 1rem;
+            .row {
+                margin: -5px -3px 10px -3px;
+            }
         }
         .collapsable-header {
             background-color: #262E37;
@@ -38,7 +41,6 @@
     display: flex;
     align-items: center;
     padding: 0px 1.25rem 0px 0px;
-    // padding: 1rem 1.25rem;
     color: #2C343F;
     // justify-content: space-between;
 
