@@ -30,19 +30,16 @@ window.$ = window.JQuery = JQuery;
 // Internal imports
 import { initPieChart } from '../components/graphs';
 import { initCollapsables } from "../components/collapsables";
+import { initAppointmentHighlighting } from "../components/appointments";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   initPieChart();
   initCollapsables();
+  initAppointmentHighlighting();
 
   console.log('hello')
 
-  const nextAppointmentButton = document.getElementById('showNextAppointment')
-  nextAppointmentButton.addEventListener('click', () => {
-    const nextAppointment = document.getElementById('fakeNextAppointment')
-    nextAppointment.classList.add('next-appointment')
-  });
 });
 
 

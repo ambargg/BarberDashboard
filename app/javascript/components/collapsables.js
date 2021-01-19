@@ -27,11 +27,5 @@ const initCollapsables = () => {
 
 }
 
-export { initCollapsables }
+export { initCollapsables };
 
-// const expanderThing = document.getElementById('expanderThing')
-  // const button = expanderThing.querySelector('button')
-  // button.addEventListener('click', () => {
-  //   expanderThing.classList.toggle('show')
-  // })
-  // console.log(button)

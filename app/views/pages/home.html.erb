@@ -11,33 +11,34 @@
 
 <div class="content-wrapper">
     <div class="nav-timetable">
-      <span class="mobile-view"> Fri 22nd Jan </span>
+      <span class="date-view">
+        <div class="calendar-today"><i class="far fa-calendar-alt"></i></div>
+        <h3><%= Date.today.strftime("%a %d %b %Y")%></h3>
+      </span>
       <div class="actions-right">
         <div class="date-controls">
-          <i class="fas fa-angle-left"></i>
-          <i class="fas fa-angle-right"></i>
-        </div>
-        <div class="date-controls">
-          <i class="fas fa-angle-double-left"></i>
-          <i class="fas fa-angle-double-right"></i>
-        </div>
-        <div class="date-controls">
-          <div class="btn">
-            <i class="fa fa-ellipsis-v"></i>
+          <a href="#"><i class="fas fa-step-backward"></i></a>
+          <div class="weekdays">
+            <a class="weekday" href="#">Su</a>
+            <a class="weekday" href="#">Mo</a>
+            <a class="weekday" href="#">Tu</a>
+            <a class="weekday" href="#">We</a>
+            <a class="weekday" href="#">Th</a>
+            <a class="weekday selected" href="#">Fr</a>
+            <a class="weekday" href="#">Sa</a>
           </div>
-        </div>        
+          <a href="#"><i class="fas fa-step-forward"></i></a>
+        </div>
       </div>
     </div>
 
   <section class="content">
     <div class="dashboard-content">
-
       <div class="heading-summary">
         <div class="btn-group" role="group" aria-label="Basic outlined example">
           <button type="button" class="btn active">Today</button>
           <button type="button" class="btn">Week</button>
         </div>
-
         <button type="button" id="showNextAppointment" class="btn btn-primary"><i class="fas fa-calendar-check"></i>Next</button>
       </div>
      
@@ -45,7 +46,7 @@
         <div class="collapsable">
           <div class="collapsable-header">
             <span class="info-box-icon"><i class="fas fa-calendar-day"></i></span>
-            <button><span class="header"><h4>Today</h4></span>
+            <button><span class="header"><h4>Today,  <%= Date.today.strftime("%A %d %b") %></h4></span>
             <span class="icon"><i class="fas fa-chevron-down"></i></span></button>
           </div>
 
@@ -53,81 +54,87 @@
             <div class="row">
               <div class="schedule-timetable">
 
-                <div class="timetable-hour">
+                <div class="timeslot timetable-hour ongoing">
                   <div class="timetable-content">
                     <div class="schedule-infos">
-                      <i class="far fa-clock"></i><p><strong>09:00-12:00</strong> | Jenny Bose | Haircut & Dye </p>
+                      <i class="far fa-clock"></i><p><strong>09:00-12:00</strong> | Jenny Bose | <strong>Haircut & Dye</strong></p>
                     </div>
                     <div class="button-infos">
                       <span class="btn-pill paid-online"><i class="fas fa-coins"></i>Online</span>
                       <span class="btn-pill time-active">£68</span>
-                      <span class="btn-cancellation"><i class="fa fa-ban"></i></span>
+                      <div class="cancel"><span class="btn-cancellation"><i class="fa fa-ban"></i></span></div>
                     </div>
                   </div>
                 </div>
 
-                <div class="timetable-hour ongoing">
+                <div class="timeslot timetable-hour">
                   <div class="timetable-content">
                     <div class="schedule-infos">
-                      <i class="far fa-clock"></i><p><strong>12:00-13:00</strong> | Jenny Bose | Haircut & Dye </p>
+                      <i class="far fa-clock"></i><p><strong>12:00-13:00</strong> | Mark Twig | <strong>Beard Wax</strong></p>
                     </div>
                     <div class="button-infos">
                       <span class="btn-pill unpaid"><i class="fas fa-walking"></i>Unpaid</span>
-                      <span class="btn-pill time-active">£68</span>
-                      <span class="btn-cancellation"><i class="fa fa-ban"></i></span>
+                      <span class="btn-pill time-active">£50</span>
+                      <div class="cancel"><span class="btn-cancellation"><i class="fa fa-ban"></i></span></div>
                     </div>
                   </div>
                 </div>
                  
-                  <div class="free-time">
+                  <div class="timeslot free-time">
                     <div class="schedule-infos">
                       <p><strong>13:00-14:00</strong> | Free Time </p>
                     </div>
                   </div>
 
-                <div class="timetable-hour" id="fakeNextAppointment">
+                <div class="timeslot timetable-hour" id="fakeNextAppointment">
                   <div class="timetable-content">
                     <div class="schedule-infos">
-                      <i class="far fa-clock"></i><p><strong>14:00-15:00</strong> | Jenny Bose | Haircut & Dye </p>
+                      <i class="far fa-clock"></i><p><strong>14:00-15:00</strong> | Peter P | <strong>Beard Trim</strong></p>
                     </div>
                     <div class="button-infos">
                       <span class="btn-pill unpaid"><i class="fas fa-walking"></i>Unpaid</span>
-                      <span class="btn-pill time-active">£68</span>
-                      <span class="btn-cancellation"><i class="fa fa-ban"></i></span>
+                      <span class="btn-pill time-active">£12</span>
+                      <div class="cancel"><span class="btn-cancellation"><i class="fa fa-ban"></i></span></div>
                     </div>
                   </div>
                 </div>
 
-                <div class="timetable-hour">
+                <div class="timeslot timetable-hour">
                   <div class="timetable-content">
                     <div class="schedule-infos">
-                      <i class="far fa-clock"></i><p><strong>15:00-16:00</strong> | Jenny Bose | Haircut & Dye </p>
+                      <i class="far fa-clock"></i><p><strong>15:00-16:00</strong> | William | <strong>Hair Trim</strong></p>
                     </div>
                     <div class="button-infos">
                       <span class="btn-pill paid-online"><i class="fas fa-coins"></i>Online</span>
-                      <span class="btn-pill time-active">£68</span>
-                      <span class="btn-cancellation"><i class="fa fa-ban"></i></span>
+                      <span class="btn-pill time-active">£28</span>
+                      <div class="cancel"><span class="btn-cancellation"><i class="fa fa-ban"></i></span></div>
                     </div>
                   </div>
                 </div>
 
-                 <div class="free-time">
+                <div class="timeslot free-time">
                     <div class="schedule-infos">
                       <p><strong>16:00-16:15</strong> | Free Time </p>
                     </div>
-                  </div>
+                </div>
 
-                <div class="timetable-hour">
+                <div class="timeslot timetable-hour">
                   <div class="timetable-content">
                     <div class="schedule-infos">
-                      <i class="far fa-clock"></i><p><strong>16:15-18:00</strong> | Jenny Bose | Haircut & Dye </p>
+                      <i class="far fa-clock"></i><p><strong>16:15-18:00</strong> | Yann P | <strong>Skin Fade</strong></p>
                     </div>
                     <div class="button-infos">
                       <span class="btn-pill paid-online"><i class="fas fa-coins"></i>Online</span>
-                      <span class="btn-pill time-active">£68</span>
-                      <span class="btn-cancellation"><i class="fa fa-ban"></i></span>
+                      <span class="btn-pill time-active">£180</span>
+                      <div class="cancel"><span class="btn-cancellation"><i class="fa fa-ban"></i></span></div>
                     </div>
                   </div>
+                </div>
+
+                <div class="timeslot free-time">
+                    <div class="schedule-infos">
+                      <p><strong>18:00-19:00</strong> | Free Time </p>
+                    </div>
                 </div>
 
               </div>

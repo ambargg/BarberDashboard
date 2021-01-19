@@ -11,7 +11,7 @@ const initPieChart = () => {
   
     // donut 
     var chDonutData1 = {
-        labels: ['Earnings', 'Tips', 'Remaining'],
+        labels: ['£342 Earnings', '£120 Tips', 'Remaining'],
         datasets: [
           {
             backgroundColor: colors.slice(0,3),

@@ -23,21 +23,76 @@
 }
 
 .nav-timetable {
+  width: 100%;
   background-color: white;
   z-index: 1;
-  overflow: visible;
-  position: -webkit-sticky !important;
-  position: sticky !important;
-  top: 50px;
-  height: 74px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 45px;
   color: #2C343F;
   font-size: 21px;
-  padding: 15px 15px;
+  padding: 13px 0px 6px 0px;
   display: block;
-  margin: -15px -15px 0;
+  margin: -15px 0px 0;
   border-bottom: 1px solid #CED8DB;
 }
 
+.date-view {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  color: #2C343F;
+  font-size: 16px;
+  .calendar-today {
+    font-size: 21px;
+    float: right;
+    padding-right: 15px;
+    cursor: pointer;
+  }
+}
+
+.actions-right {
+  width: 100%;
+  padding: 0px 15px 0px 15px;
+  text-align: center;
+}
+
+.date-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  .fas {
+      color:  #2C343F;
+  }
+  .btn {
+      padding: 3px;
+      width: 28px;
+   }
+}
+
+.weekdays {
+  width: 100%;
+  display: contents;
+
+  .weekday {
+    text-decoration: none;
+    background-color: #B8C7CE;
+    font-size: 14px;
+    color: #2C343F;
+    border-radius: 50%;
+    padding: 5px 0;
+    width: 35px;
+    text-align: center;
+    display: inline-block;
+    line-height: 21px;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  .selected {
+    background-color: #222D32;
+    color: white;
+  }
+}
 
 @media (max-width: 767px) {
 .navbar {
@@ -45,17 +100,4 @@
   width: 100%;
   float: none;
   }
-}
-
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
 }
