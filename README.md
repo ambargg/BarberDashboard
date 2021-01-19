@@ -52,10 +52,16 @@ Starting with our User Story of being a barber wanting to have an overview of th
 In keeping with the brand style and personality, this was the first design iteration for the 'day/week' dashboard. All of the features (mentioned above) had to be added clearly without being too confusing or crowded. I opted for collapsable contents that could close into thin cards/tabs when not needed (and for future extra features on the page).
 
 *First iteration:*
+
+
 ![figma 1](https://user-images.githubusercontent.com/52960001/105095390-e00d3e00-5aa5-11eb-8c23-14df4b53386f.png)
 The second iteration was a bit cleaner and more in line with the design style of nearcut.com. Due to the time limit I was not able to design more features or more figma iterations.
 
+
+
 *Second iteration:*
+
+
 ![figma 2](https://user-images.githubusercontent.com/52960001/105098457-63c92980-5aaa-11eb-80a5-192c3618427e.png)
 
 ---
@@ -77,26 +83,45 @@ The **javascript** is in 3 different files (*appointments, collapsables, graphs*
 
 ### Working App Screenshots:
 
-**Main dahsboard with collapsabes closed:**
+**Main dashboard with collapsabes closed:**
+
 ![dashboard1](https://user-images.githubusercontent.com/52960001/105102959-06d07200-5ab0-11eb-9f4d-b1cf6f5ea466.png)
 ![dashboard2](https://user-images.githubusercontent.com/52960001/105103018-1cde3280-5ab0-11eb-87b0-33bff4985b73.png)
 
+
 **Next Appointments section opened to show next appt times and break times:**
+
 ![next appt](https://user-images.githubusercontent.com/52960001/105103077-397a6a80-5ab0-11eb-9b3f-0b70041f4ea1.png)
 
+
 **Today overview section open:**
+
 ![today1](https://user-images.githubusercontent.com/52960001/105103128-531bb200-5ab0-11eb-82eb-9732cd0d7672.png)
+
+
 **Today overview showing disabled timeslot and current appt with dark background:**
+
+
 ![today2](https://user-images.githubusercontent.com/52960001/105103166-69297280-5ab0-11eb-9f52-5723c9e9d281.png)
+
+
 ![today3](https://user-images.githubusercontent.com/52960001/105103187-78102500-5ab0-11eb-80a2-e80073975cc0.png)
 
+
+
 **Revenue section showing tooltip and changing data:**
-![Create React App](https://user-images.githubusercontent.com/52960001/105103282-9e35c500-5ab0-11eb-93f6-ee86a6f2fa16.png)
-![Create React App](https://user-images.githubusercontent.com/52960001/105103292-a1c94c00-5ab0-11eb-9626-79ed530467b6.png)
+
+
+![revenue 1](https://user-images.githubusercontent.com/52960001/105103282-9e35c500-5ab0-11eb-93f6-ee86a6f2fa16.png)
+
+![revenue 2](https://user-images.githubusercontent.com/52960001/105103292-a1c94c00-5ab0-11eb-9626-79ed530467b6.png)
+
+
 
 **Weekly summary open and showing horizontal scroll:**
-![Create React App](https://user-images.githubusercontent.com/52960001/105103379-cfae9080-5ab0-11eb-82e1-c0945fbbbbb0.png)
-![Create React App](https://user-images.githubusercontent.com/52960001/105103390-d2a98100-5ab0-11eb-811f-ad7ca55d6ce1.png)
+
+![week summary 1](https://user-images.githubusercontent.com/52960001/105103379-cfae9080-5ab0-11eb-82e1-c0945fbbbbb0.png)
+![week summary 2](https://user-images.githubusercontent.com/52960001/105103390-d2a98100-5ab0-11eb-811f-ad7ca55d6ce1.png)
 
 
 ### Issues I encountered
